@@ -6,107 +6,133 @@
     <title>Melnikov Resume</title>
     <meta name="keywords" content="Melnikov, cs, resume" />
     <meta name="description" content="Это сайт - резюме Семёна Мельникова" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img
-      src="img/photo_2026-01-14_14-04-58.jpg"
-      width="200px"
-      alt="Здесь была моя аватарка"
-    />
-    <h1>Мельников Семён</h1>
+    <div class="container">
+      <div class="info">
+        <img
+          src="img/photo_2026-01-14_14-04-58.jpg"
+          width="200 px"
+          alt="Здесь была моя аватарка"
+        />
 
-    <p>
-      Я начал базовое изучение <strong>HTML и CSS</strong> от онлайн-школы
-      <strong>Result University.</strong>
-    </p>
-    <p>
-      <em
-        >Я люблю изучать что-то новое, тем самым развивая свои способности!</em
-      >
-    </p>
+        <div class="info-text">
+          <h1>Мельников Семён</h1>
 
-    <h2>Список социальных сетей:</h2>
-    <a href="https://t.me/exiggggg" target="_blank">Telegram</a> |
-    <a href="https://vk.com/dxruol" target="_blank">Вконтакте</a> |
-    <a
-      href="https://www.instagram.com/exiggggg?igsh=MXF0YXR1YW01b3Vmdw%3D%3D&utm_source=qr"
-      target="_blank"
-      >Instagram*</a
-    >
+          <p>
+            Я начал базовое изучение <strong>HTML и CSS</strong> от онлайн-школы
+            <strong>Result University.</strong>
+          </p>
+          <p>
+            <em
+              >Я люблю изучать что-то новое, тем самым развивая свои
+              способности!</em
+            >
+          </p>
 
-    <h2>Мои хобби</h2>
+          <h2>Список социальных сетей:</h2>
 
-    <ol>
-      <li>Музыка</li>
-      <li>Просмотр фильмов</li>
-      <li>Спорт</li>
-      <li>Чтение</li>
-    </ol>
+          <div class="link-syte">
+            <a href="https://t.me/exiggggg" class="btn" target="_blank"
+              >Telegram</a
+            >
 
-    <h2>Опыт работы</h2>
+            <a href="https://vk.com/dxruol" class="btn" target="_blank"
+              >Вконтакте</a
+            >
 
-    <table>
-      <thead>
-        <tr>
-          <th>Название работы</th>
-          <th>Должность</th>
-          <th>Период работы (год)</th>
-        </tr>
-      </thead>
+            <a
+              href="https://www.instagram.com/exiggggg?igsh=MXF0YXR1YW01b3Vmdw%3D%3D&utm_source=qr"
+              class="btn"
+              target="_blank"
+              >Instagram*</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card bg-green">
+        <h2>Мои хобби</h2>
 
-      <tbody>
-        <tr>
-          <td>Wildberris</td>
-          <td>Сотрудник ПВЗ</td>
-          <td>2023 - 2023</td>
-        </tr>
-
-        <tr>
-          <td>Alga Fitnes</td>
-          <td>Администратор</td>
-          <td>2024 - 2024</td>
-        </tr>
-
-        <tr>
-          <td>Rostic's</td>
-          <td>Тренер</td>
-          <td>2025 - 2025</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-      <div>
-        <label for="Name">Имя</label>
-        <input type="text" id="Name" placeholder="Введите Имя" />
+        <ol class="list">
+          <li>Музыка</li>
+          <li>Просмотр фильмов</li>
+          <li>Спорт</li>
+          <li>Чтение</li>
+        </ol>
       </div>
 
-      <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Введите E-mail" />
-      </div>
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название работы</th>
+              <th>Должность</th>
+              <th>Период работы (год)</th>
+            </tr>
+          </thead> -->
 
-      <div>
-        <label for="message">Сообщение</label>
-        <br>
-        <textarea
-          id="massage"
-          cols="25"
-          rows="5"
-          placeholder="Введите ваше сообщение"
-        ></textarea>
-      </div>
+          <tbody>
+            <tr>
+              <td>Wildberris</td>
+              <td>Сотрудник ПВЗ</td>
+              <td>2023 - 2023</td>
+            </tr>
 
-      <div>
-        <input type="submit" value="Отправить" />
+            <tr>
+              <td>Alga Fitnes</td>
+              <td>Администратор</td>
+              <td>2024 - 2024</td>
+            </tr>
+
+            <tr>
+              <td>Rostic's</td>
+              <td>Тренер</td>
+              <td>2025 - 2025</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </form>
-    <hr />
-    <p>
-      *meta - признана экстремистской организацией и запрещена на территории
-      Российской Федерации
-    </p>
+      <div class="card bg-yellow">
+        <form action="/" class="form">
+          <h2>Связаться со мной</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="Name" class="form">Ваше имя</label>
+              <input type="text" id="Name" placeholder="Введите Имя" />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form">Ваш email</label>
+              <input type="email" id="email" placeholder="Введите E-mail" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+
+            <textarea
+              id="massage"
+              cols="25"
+              rows="5"
+              placeholder="Введите ваше сообщение"
+            ></textarea>
+          </div>
+
+          <div>
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <hr />
+
+      <div class="comment">
+        <p>
+          *meta - признана экстремистской организацией и запрещена на территории
+          Российской Федерации
+        </p>
+      </div>
+    </div>
   </body>
 </html>
